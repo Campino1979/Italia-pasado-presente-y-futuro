@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/apple-touch-icon.png" type="image/x-icon">
+    <!-- Letras de GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">    
+    <title>Italia - Pasado, presente y futuro/Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <img class= "header__logo" src="../recursos/apple-touch-icon.png">
+            <ul class="header__lista">
+                <li class="header__item"><a href="../index.html">Inicio</a></li>     
+                <li class="header__item"><a href="un-poco-de-historia.html">Un poco de Historia</a></li>
+                <li class="header__item"><a href="recetas.html">Recetas</a></li>
+                <li class="header__item"><a href="fotos-y-videos.html">Fotos y videos</a></li>
+                <li class="header__item"><a href="contactanos.html">Contactanos</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main><!-- Contenido relevante de la página -->
+        <h1>Contactanos</h1>
+        <form method="post"><!-- Los formularios van en la pagina de contacto, pero tambien se pueden utilizar para otras paginas-->
+            <section class="form__nombre"><!-- Divide contenido, es un contenedor divisor-->
+                <label>Nombre y Apellido</label><!-- Muestra la palabra antes del input -->
+                <input ><!-- Obtiene información del usuario en una sola linea -->
+            </section>
+            <section class="form__de_donde_eres">
+                <label>De donde eres?</label>
+                <select name="" id=""></select><!-- es una etiqueta propia de los formularios, es para hacer un menu desplegable     -->
+            </section>
+            <section class="form__email">
+                <label>Email</label>
+                <input>
+            </section>
+            <section class="form__textarea">
+                <label>Dejanos tus comentarios</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea> <!-- Informacion que amerita mas de una linea pero NUNCA información sensible -->
+            </section>
+            <section class="form__checkbox">
+                <input type="checkbox" name="Acepta" value="1"><!-- en lugar de checkbos se puede colocar radio para que en lugar que sea cuadrado sea redondo -->
+                <label>Acepto Términos y Condiciones</label>
+            </section>
+            <section class="form__button">
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Borrar Formulario">
+            </section>
+            
+            <Section class="form__img-redes">
+                <img class= "img-redes" src="../recursos/Imagen de Instagram.JPG" alt="Instagram"> @juntosalaparenitalia
+                <img class= "img-redes" src="../recursos/Imagen de WhatsApp.JPG" alt="WhatsApp">
+            </Section>
+        </form> <!-- Puede ser GET o POST, el get muestra en la URL la informacion sensible y en Post NO. Por defecto si no se coloca POST, va GET -->
+        
+    </main>
+    <footer><!-- es el pie de pagina, donde se ponen los derechos reservados, y las redes sociales -->
+        <div class="footer__indice">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>    
+                <li><a href="../paginas/un-poco-de-historia.html">Un poco de historia</a></li>
+                <li><a href="../paginas/recetas.html">Recetas</a></li>
+                <li><a href="../paginas/fotos-y-videos.html">Fotos y videos</a></li> 
+                <li><a href="../paginas/contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+        <div class="footer__mapa">
+            <!-- La etiqueta iframe se utiliza para abrir pedazos de videos o tambien para maps de Google, twitter, Instragram -->
+            <iframe class="medidas__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12344918.821157305!2d3.7213971057937716!3d40.93994214693448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItalia!5e0!3m2!1ses-419!2sar!4v1658097569654!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class= " footer__redes">
+            <img class= "footer__logoRS" src="../recursos/Imagen de Instagram BN.svg" alt="Instagram BN">
+            <img class= "footer__logoRS" src="../recursos/Imagen de Facebook BN.svg" alt="Facebook BN">
+            <img class= "footer__logoRS" src="../recursos/Imagen de WhatsApp BN.svg" alt="Whatsapp BN">
+            <img class= "footer__logoRS" src="../recursos/Imagen de You tube BN.svg" alt="You Tube BN">
+        </div>
+        <span class= "footer__derechos"> ITALIA: pasado, presente y futuro (c) - Todos los derechos reservados desde 2022</span><!-- Se utiliza para oraciones -->
+    </footer>
+</body>
+</html>

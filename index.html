@@ -1,0 +1,89 @@
+<!DOCTYPE html><!-- esta etiqueta identifica el tipo de documento como HTML-->
+<html lang="es"><!-- aqui comienzan las etiquetas HTML. En azul son los atributos y luego lo que representa ese atributo-->
+<head><!-- Configuran el navegador -->
+    <meta charset="UTF-8"><!-- las etiquetas meta siempre abren pero nunca cierran. le indicamos diferentes configuraciones de nuestra pag web. en esta etiqueta especifica indicamos el tipo de caracter-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--para que sea compatible entre IE y EDGE-->
+    <meta name="viewport" content="width=, initial-scale=1.0"><!-- indica el tamaño de la pantalla-->
+    <link rel="shortcut icon" href="recursos/apple-touch-icon.png" type="image/x-icon"><!-- imagen FAVICON -->
+    <!-- Letras de GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Italia - Pasado, presente y futuro</title><!-- indicamos el nombre que se ve en la pestaña. -->
+</head>
+<body><!-- Siempre va el contenido, todo lo que queremos ver en la pagina web -->
+    <header><!-- es el encabezado, incluye barra de navegacion o menu y el logo. Junto con el main y el footer son etiquetas semanticas, las reconoce el navegador para diferencias las secciones de la pagina que se van a mostrar en el buscador. -->
+        <nav class="header__nav"> <!-- barra de navegacion o menu -->
+            <img class= "header__logo" src="recursos/apple-touch-icon.png">
+            <ul class="header__lista"> <!-- class es un selector personalizado -->
+                <li class="header__item"><a href="index.html">Inicio</a></li>    
+                <li class="header__item"><a href="paginas/un-poco-de-historia.html">Un poco de historia</a></li>
+                <li class="header__item"><a href="paginas/recetas.html">Recetas</a></li>
+                <li class="header__item"><a href="paginas/fotos-y-videos.html">Fotos y videos</a></li> 
+                <li class="header__item"><a href="paginas/contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><!-- tiene todo el contenido de la pagina que no sea HEADER ni FOOTER -->
+        <section class="main__texto-presentacion">
+            <P>ITALIA: pasado, presente y futuro</P>
+            <p>Este es un proyecto familiar para poder compartir toda clase de Información sobre ITALIA, de nuestros antepasados, recetas y que esta comunidad sea creciendo dia tras dia.</p>
+            <p>Para comenzar diremos que esta página esta hecha con mucha pasión, y representa nuestra historia. Aquella que nos lleva muchos años hacia atras, o quizas no tantos. Pero que nos une la pasión por ese bello pais que es ITALIA.</p>
+            <p>Este es un proyecto que nace con la intensión de poner a disposición de todo el mundo, información del pasado y actualidad. La idea de este proyecto es poder intercambiar experiencias, vivencias, etc.</p>
+        </section> 
+        
+        <h1>Ultimas Novedades</h1>
+            <section class="ultimas__novedades__grid">
+                <div class="imagen-principal"></div>
+                <article class=" card tiempo">
+                    <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
+                    <h2 class="formato__titulo">Tiempo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                </article>
+                <article class="card deportes">
+                    <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
+                    <h2 class="formato__titulo">Deportes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                </article>
+                <article class="card politica">
+                    <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
+                    <h2 class="formato__titulo">Policita</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                </article>
+                <article class="card internacionales">
+                    <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
+                    <h2 class="formato__titulo">Internacionales</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                </article>
+            </section>
+        <!-- Etiqueta ifrema se utliza para vincular, videos de Youtube, Mas de Google, Twitter, Intagram, spotify, la etiqueta img es para subir fotos, de forma enlace local o enlace web -->
+    </main>
+    <footer><!-- es el pie de pagina, donde se ponen los derechos reservados, y las redes sociales -->
+        <div class="footer__indice">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>    
+                <li><a href="paginas/un-poco-de-historia.html">Un poco de historia</a></li>
+                <li><a href="paginas/recetas.html">Recetas</a></li>
+                <li><a href="paginas/fotos-y-videos.html">Fotos y videos</a></li> 
+                <li><a href="paginas/contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+        <div class="footer__mapa">
+            <!-- La etiqueta iframe se utiliza para abrir pedazos de videos o tambien para maps de Google, twitter, Instragram -->
+        <iframe class="medidas__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12344918.821157305!2d3.7213971057937716!3d40.93994214693448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItalia!5e0!3m2!1ses-419!2sar!4v1658097569654!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class= " footer__redes">
+            <img class= "footer__logoRS" src="recursos/Imagen de Instagram BN.svg" alt="Instagram BN">
+            <img class= "footer__logoRS" src="recursos/Imagen de Facebook BN.svg" alt="Facebook BN">
+            <img class= "footer__logoRS" src="recursos/Imagen de WhatsApp BN.svg" alt="Whatsapp BN">
+            <img class= "footer__logoRS" src="recursos/Imagen de You tube BN.svg" alt="You Tube BN">
+        </div>
+        <span class= "footer__derechos"> ITALIA: pasado, presente y futuro (c) - Todos los derechos reservados desde 2022</span><!-- Se utiliza para oraciones -->
+    </footer>
+</body>
+</html> 
