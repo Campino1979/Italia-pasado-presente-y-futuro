@@ -84,7 +84,7 @@ p {
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: rgb(59, 58, 58);
-}
+    }
 
 .imagen-principal{
     grid-column-start: 1;
@@ -139,6 +139,29 @@ p {
 
 .card{
     border: white solid 5px; /* color tipo y tamaño */
+}
+
+.recetas {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: white
+}
+
+.receta__carbonara {
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.receta__malfatti {
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.imagen__recetas {
+    width: 75px;
 }
 
 .imagen__italia__grid {
