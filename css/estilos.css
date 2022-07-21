@@ -28,7 +28,7 @@ p {
     padding: 10px 16px;
 }
 
-.main__texto-presentacion{
+.main__texto-presentacion {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 18px;
@@ -86,7 +86,7 @@ p {
     background-color: rgb(59, 58, 58);
     }
 
-.imagen-principal{
+.imagen-principal {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -129,7 +129,7 @@ p {
     color: white;
 }
 
-.formato__titulo{
+.formato__titulo {
     text-align: center;
 }
 
@@ -137,27 +137,64 @@ p {
     width: 35px;
 }
 
-.card{
+.card {
     border: white solid 5px; /* color tipo y tamaño */
+}
+
+.titulo__recetas {
+    text-align: center;
 }
 
 .recetas {
     display: grid;
     width: 100vw;
     height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
     background-color: white
 }
 
+.recetas__italianas {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .receta__carbonara {
+    grid-column: 2/3;
+    grid-row: 1/2;
     font-family: "roboto", sans-serif;
-    font-size: 14px;
-    color: white;
+    font-size: 12px;
+    color: black;
 }
 
 .receta__malfatti {
+    grid-column: 3/4;
+    grid-row: 1/2;
     font-family: "roboto", sans-serif;
-    font-size: 14px;
-    color: white;
+    font-size: 12px;
+    color: black;
+}
+
+.receta__Espaguetis-al-pesto {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: "roboto", sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.receta__Panini-casero-de-atun {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: "roboto", sans-serif;
+    font-size: 12px;
+    color: black;
 }
 
 .imagen__recetas {
