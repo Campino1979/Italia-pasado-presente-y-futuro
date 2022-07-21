@@ -9,56 +9,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">    
     <title>Italia - Pasado, presente y futuro/Contactanos</title>
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <img class= "header__logo" src="../recursos/apple-touch-icon.png">
-            <ul class="header__lista">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>     
-                <li class="header__item"><a href="un-poco-de-historia.html">Un poco de Historia</a></li>
-                <li class="header__item"><a href="recetas.html">Recetas</a></li>
-                <li class="header__item"><a href="fotos-y-videos.html">Fotos y videos</a></li>
-                <li class="header__item"><a href="contactanos.html">Contactanos</a></li>
-            </ul>    
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/apple-touch-icon.png" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="un-poco-de-historia.html">Un poco de Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos-y-videos.html">Fotos y videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                </div>
+            </div>
         </nav>
     </header>
     <main><!-- Contenido relevante de la página -->
-        <h1>Contactanos</h1>
-        <form method="post"><!-- Los formularios van en la pagina de contacto, pero tambien se pueden utilizar para otras paginas-->
-            <section class="form__nombre"><!-- Divide contenido, es un contenedor divisor-->
-                <label>Nombre y Apellido</label><!-- Muestra la palabra antes del input -->
-                <input ><!-- Obtiene información del usuario en una sola linea -->
-            </section>
-            <section class="form__de_donde_eres">
-                <label>De donde eres?</label>
-                <select name="" id=""></select><!-- es una etiqueta propia de los formularios, es para hacer un menu desplegable     -->
-            </section>
-            <section class="form__email">
-                <label>Email</label>
-                <input>
-            </section>
-            <section class="form__textarea">
-                <label>Dejanos tus comentarios</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea> <!-- Informacion que amerita mas de una linea pero NUNCA información sensible -->
-            </section>
-            <section class="form__checkbox">
-                <input type="checkbox" name="Acepta" value="1"><!-- en lugar de checkbos se puede colocar radio para que en lugar que sea cuadrado sea redondo -->
-                <label>Acepto Términos y Condiciones</label>
-            </section>
-            <section class="form__button">
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Borrar Formulario">
-            </section>
+        <form>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Apellido y nombre</label>
+                <textarea class="form-control apellido-nombre" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Lugar de residencia</label>
+                <textarea class="form-control residencia" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Consultas o comentarios</label>
+                <textarea class="form-control texterea" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
             
-            <Section class="form__img-redes">
-                <img class= "img-redes" src="../recursos/Imagen de Instagram.JPG" alt="Instagram"> @juntosalaparenitalia
-                <img class= "img-redes" src="../recursos/Imagen de WhatsApp.JPG" alt="WhatsApp">
-            </Section>
-        </form> <!-- Puede ser GET o POST, el get muestra en la URL la informacion sensible y en Post NO. Por defecto si no se coloca POST, va GET -->
-        
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button">Enviar</button>
+                <button class="btn btn-primary" type="button">Cancelar</button>
+        </div>
+    </form>
     </main>
     <footer><!-- es el pie de pagina, donde se ponen los derechos reservados, y las redes sociales -->
         <div class="footer__indice">
@@ -83,5 +94,9 @@
         </div>
         <span class= "footer__derechos"> ITALIA: pasado, presente y futuro (c) - Todos los derechos reservados desde 2022</span><!-- Se utiliza para oraciones -->
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>

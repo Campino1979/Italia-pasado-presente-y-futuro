@@ -12,20 +12,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Italia - Pasado, presente y futuro</title><!-- indicamos el nombre que se ve en la pestaña. -->
 </head>
 <body><!-- Siempre va el contenido, todo lo que queremos ver en la pagina web -->
-    <header><!-- es el encabezado, incluye barra de navegacion o menu y el logo. Junto con el main y el footer son etiquetas semanticas, las reconoce el navegador para diferencias las secciones de la pagina que se van a mostrar en el buscador. -->
-        <nav class="header__nav"> <!-- barra de navegacion o menu -->
-            <img class= "header__logo" src="recursos/apple-touch-icon.png">
-            <ul class="header__lista"> <!-- class es un selector personalizado -->
-                <li class="header__item"><a href="index.html">Inicio</a></li>    
-                <li class="header__item"><a href="paginas/un-poco-de-historia.html">Un poco de historia</a></li>
-                <li class="header__item"><a href="paginas/recetas.html">Recetas</a></li>
-                <li class="header__item"><a href="paginas/fotos-y-videos.html">Fotos y videos</a></li> 
-                <li class="header__item"><a href="paginas/contactanos.html">Contactanos</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="recursos/apple-touch-icon.png" alt="" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/un-poco-de-historia.html">Un poco de Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/fotos-y-videos.html">Fotos y videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/contactanos.html">Contactanos</a>
+                    </li>
+                </div>
+            </div>
         </nav>
     </header>
     <main><!-- tiene todo el contenido de la pagina que no sea HEADER ni FOOTER -->
@@ -39,25 +60,25 @@
         <h1>Ultimas Novedades</h1>
             <section class="ultimas__novedades__grid">
                 <div class="imagen-principal"></div>
-                <article class=" card tiempo">
+                <article class=" card sociedad">
                     <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
-                    <h2 class="formato__titulo">Tiempo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                    <h2 class="formato__titulo">Sociedad</h2>
+                    <p>11/07/2022 - Una ciudad turística italiana impone multas por llevar el torso al desnudo. El alcalde de Sorrento, una ciudad turística italiana, está tomando medidas para imponer multas a las personas con vestimenta inapropiada alegando una preocupación por la "calidad de vida" de sus ciudadanos. Massimo Coppola, alcalde de Sorrento, anunció multas de entre 25 y 500 euros en una publicación de Facebook del 6 de julio.(CNN)</p>
                 </article>
                 <article class="card deportes">
                     <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
                     <h2 class="formato__titulo">Deportes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                    <p>20/07/2022 - Se enfría la pista Skriniar: Según L’Équipe, los parisinos no suben de 50 millones de € mientras que el Inter, que no ha podido fichar a Bremer, no baja de los 60-70 millones por el central. Lo que parecía un fichaje inminente se está complicando de sobremanera para el PSG. Milan Skriniar, central de 27 años del Inter de Milan, sigue muy lejos de convertirse en nuevo jugador de los parisinos. De acuerdo con la información de L’Équipe, las discrepancias de dinero entre ambos clubes son considerables y las negociaciones no han avanzado en los últimos días. Respecto a Skriniar, el dossier es complicado por una cuestión de dinero. El Inter de Milan pide entre 60 y 70 millones de euros por el esloveno y Luis Campos, consciente de que ese precio le puede poner en dificultades en el Fair-Play Financiero, no sube de 50. Si finalmente los Nerazzurri continúan inflexibles en las negociaciones, el PSG estudiará otras pistas en defensa durante las próximas semanas.(AS)</p>
                 </article>
                 <article class="card politica">
                     <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
-                    <h2 class="formato__titulo">Policita</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                    <h2 class="formato__titulo">Politica</h2>
+                    <p>21/07/2022 - El presidente de Italia, Sergio Mattarella, disuelve el Parlamento y convoca a elecciones anticipadas: Mattarella añadió que se convocarán elecciones "en el plazo indicado por la Constitución". La decisión se produce después de la dimisión del primer ministro Mario Draghi este mismo jueves. El presidente pidió Draghi que permanezca en el gobierno como interino hasta que se elija a su sucesor.(CNN)</p>
                 </article>
                 <article class="card internacionales">
                     <img class="novedades__card" src="recursos/pequena-italia.jpg" alt="pequeña italia">
                     <h2 class="formato__titulo">Internacionales</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis, necessitatibus temporibus, dolore quod ratione pariatur praesentium et eligendi tempora incidunt quas maiores! Eveniet praesentium nostrum, voluptatum fugiat qui reprehenderit.</p>
+                    <p>06/07/2022 - Extraditan desde Brasil a Rocco Morabito, uno de los mafiosos más buscados de Italia. Rocco Morabito, uno de los fugitivos más buscados de Italia y capo de la droga condenado de la mafia italiana, llegó a Roma el miércoles por la mañana después de ser extraditado de Brasil, dijo la policía italiana. Morabito, de 56 años, fue arrestado por la policía brasileña el 25 de mayo de este año durante una operación conjunta de la policía italiana, Interpol y las agencias estadounidenses DEA y FBI, dijo la policía de Roma en un comunicado. El comunicado dice que Morabito es "uno de los principales intermediarios del mercado internacional de drogas". Fue condenado por delitos relacionados con las drogas por un tribunal italiano hace dos décadas en ausencia y cumplirá 30 años de prisión. Morabito también fue incluido en la lista de fugitivos de “máximo peligro” del Ministerio del Interior italiano. Después de estar prófugo durante 23 años, fue detenido en Uruguay en septiembre de 2017 por carabineros. El 24 de junio de 2019, mientras esperaba ser extraditado a Italia, logró fugarse de una prisión en la capital uruguaya de Montevideo. Permaneció escondido hasta mayo de 2021 cuando la policía, a través de “complejas investigaciones internacionales, que también involucraron seguimiento de pistas telemáticas”, lo encontró en la ciudad brasileña de Joao Pessoa, agregó el comunicado.(CNN)</p>
                 </article>
             </section>
         <!-- Etiqueta ifrema se utliza para vincular, videos de Youtube, Mas de Google, Twitter, Intagram, spotify, la etiqueta img es para subir fotos, de forma enlace local o enlace web -->
@@ -85,5 +106,9 @@
         </div>
         <span class= "footer__derechos"> ITALIA: pasado, presente y futuro (c) - Todos los derechos reservados desde 2022</span><!-- Se utiliza para oraciones -->
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html> 
