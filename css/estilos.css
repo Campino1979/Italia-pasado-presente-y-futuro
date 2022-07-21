@@ -83,7 +83,7 @@ p {
     height: 100vh;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(59, 58, 58);
+    background-color: rgb(52, 50, 50);
     }
 
 .imagen-principal {
@@ -171,6 +171,14 @@ p {
     font-family: "roboto", sans-serif;
     font-size: 12px;
     color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.receta__carbonara:hover {
+    transform: scale(1.1,1.1);
 }
 
 .receta__malfatti {
@@ -179,6 +187,14 @@ p {
     font-family: "roboto", sans-serif;
     font-size: 12px;
     color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.receta__malfatti:hover {
+    transform: scale(1.1,1.1);
 }
 
 .receta__Espaguetis-al-pesto {
@@ -187,6 +203,14 @@ p {
     font-family: "roboto", sans-serif;
     font-size: 12px;
     color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.receta__Espaguetis-al-pesto:hover {
+    transform: scale(1.1,1.1);
 }
 
 .receta__Panini-casero-de-atun {
@@ -195,6 +219,14 @@ p {
     font-family: "roboto", sans-serif;
     font-size: 12px;
     color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.receta__Panini-casero-de-atun:hover {
+    transform: scale(1.1,1.1);
 }
 
 .imagen__recetas {
