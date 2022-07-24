@@ -37,6 +37,11 @@ p {
     background-repeat: no-repeat;
 }  
 
+.main__texto-presentacion ::selection {
+    background-color: green;
+    color: white;
+}
+
 .nav-link {
     display: flex;
     list-style: none; /* para que no haya un punto delante */
@@ -66,7 +71,17 @@ p {
 
 .form__texto {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+}
+
+.form__texto ::first-letter {
+    color: red;
+    font-size: 28px;
+}
+
+.form__texto ::selection {
+    background-color: green;
+    color: white;
 }
 
 .ultimas__novedades__grid {
@@ -97,6 +112,11 @@ p {
     background-color: rgb(52, 50, 50);
 }
 
+.sociedad ::selection {
+    background-color: green;
+    color: white;
+}
+
 .deportes {
     grid-column: 3/4;
     grid-row: 1/2;
@@ -104,6 +124,11 @@ p {
     font-size: 12px;
     color: white;
     background-color: rgb(52, 50, 50);
+}
+
+.deportes ::selection {
+    background-color: green;
+    color: white;
 }
 
 .politica {
@@ -115,6 +140,11 @@ p {
     background-color: rgb(52, 50, 50);
 }
 
+.politica ::selection {
+    background-color: green;
+    color: white;
+}
+
 .internacionales {
     grid-column: 3/4;
     grid-row: 2/3;
@@ -122,6 +152,11 @@ p {
     font-size: 12px;
     color: white;
     background-color: rgb(52, 50, 50);
+}
+
+.internacionales ::selection {
+    background-color: green;
+    color: white;
 }
 
 .formato__titulo {
@@ -136,8 +171,15 @@ p {
     border: white solid 5px; /* color tipo y tamaño */
 }
 
+.card ::selection {
+    background-color: green;
+    color: white;
+}
+
 .titulo__recetas {
     text-align: center;
+    font-size: 16px;
+    text-decoration-line: underline;
 }
 
 .recetas {
@@ -482,6 +524,10 @@ h3 {
     height: 300px; 
 }
 
+.mb-3 :focus { 
+    outline: 4px solid green;  
+}
+
 .form-label {
     margin: 10px;
 }
@@ -509,9 +555,13 @@ h3 {
 }
 
 .btn {
-    background-color: rgb(70, 69, 69);
-    color: white;
+    background-color: black;
+    color: white; 
     margin: 10px;
+}
+
+.btn:focus {
+    outline: 4px solid red;
 }
 
 /* las media querys siempre se miden en Pixels */
@@ -537,9 +587,9 @@ h3 {
     .ultimas__novedades__grid {
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         column-gap: 0px;
-        row-gap: 15px;
+        row-gap: 10px;
     }   
     .imagen-principal{
         grid-column-start: 1;
@@ -631,6 +681,10 @@ h3 {
         grid-column: 3/4;
         grid-row: 5/6;
     }
+
+    .form__texto {
+        font-size: 10px;
+}
 
     footer {
         grid-template-areas: "indice mapa" 
