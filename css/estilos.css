@@ -425,34 +425,36 @@ p {
     height: 26px;/* es alto */
 }
 
-.form__nombre {
-    font-family: 'Roboto', sans-serif;
+.form-control {
+    background-color: black;
+    color: white;
+    width: 500px;
     margin: 10px;
 }
 
-.form__de_donde_eres {
-    font-family: 'Roboto', sans-serif;
+.apellido-nombre {
+    width: 700px;
+    height: 10px;
+}
+
+.residencia {
+    width: 700px;
+    height: 10px;
+}
+
+.texterea {
+    width: 700px;
+    height: 500px;
+}
+
+.btn {
+    background-color: black;
+    color: white; 
     margin: 10px;
 }
 
-.form__email {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
-
-.form__textarea {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
-
-.form__checkbox {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-}
-
-.form__button {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
+.btn:focus {
+    outline: 4px solid red;
 }
 
 footer {
@@ -532,38 +534,6 @@ h3 {
     margin: 10px;
 }
 
-.form-control {
-    background-color: black;
-    color: white;
-    width: 500px;
-    margin: 10px;
-}
-
-.apellido-nombre {
-    width: 700px;
-    height: 10px;
-}
-
-.residencia {
-    width: 700px;
-    height: 10px;
-}
-
-.texterea {
-    width: 700px;
-    height: 500px;
-}
-
-.btn {
-    background-color: black;
-    color: white; 
-    margin: 10px;
-}
-
-.btn:focus {
-    outline: 4px solid red;
-}
-
 /* las media querys siempre se miden en Pixels */
 /* media querie  de CELULAR */
 /* 99.99% de las veces debe haber solo una columna */
@@ -618,6 +588,105 @@ h3 {
         grid-row: 5/6;
     }
 
+    .titulo__recetas {
+        font-size: 10px;
+    }
+    
+    .recetas {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr)
+    }
+    
+    .recetas__italianas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .receta__carbonara {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Malfatti {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Espaguetis-al-pesto {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Panini-casero-de-atun {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .imagen__recetas {
+        width: 50px;
+    }
+
+    .form-control {
+        width: 200px;
+        margin: 5px;
+    }
+    
+    .apellido-nombre {
+        width: 250px;
+        height: 5px;
+    }
+    
+    .residencia {
+        width: 250px;
+        height: 5px;
+    }
+    
+    .texterea {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .btn {
+        margin: 5px;
+    }
+    
     footer {
         grid-template-areas: "indice" 
                             "mapa"
@@ -693,13 +762,13 @@ h3 {
     }
 
     .medidas__mapa {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
 
     .footer__logoRS {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         margin: 10px;
     }
 
