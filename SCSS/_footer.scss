@@ -1,0 +1,52 @@
+footer {
+    display: grid;
+    grid-template-areas: "indice mapa redes"
+                        "indice mapa derechos";
+    background-color:  #0066cc;
+    padding: 24px;
+
+    .footer
+        &__indice {
+        grid-area: indice;
+        & ul li {
+            font-size: 16px;
+            padding-bottom: 14px;
+        }
+    }
+        
+        &__mapa {
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .medidas__mapa {
+        width:400px;
+        height: 300px; 
+    }
+    
+        &__redes {
+        grid-area: redes;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }    
+    
+        &__logoRS {
+        display: inline;
+        width: 35px;
+        height: 35px;
+        margin: 15px;
+        }
+    
+        &__derechos {
+        grid-area: derechos;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        background-color: #0066cc;
+        font-size: 14px;
+        margin: 10px;
+        display: inline;
+        }
+    }
+

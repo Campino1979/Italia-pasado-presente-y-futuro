@@ -1,0 +1,250 @@
+/* las media querys siempre se miden en Pixels */
+/* media querie  de CELULAR */
+/* 99.99% de las veces debe haber solo una columna */
+/* 0.01% son galerias cuadriculadas que pueden tener hasta 3 columnas */
+@media (min-width: 320px) and (max-width: 575px) {
+    header {
+        height: auto;
+    }
+
+    .header__lista {
+        flex-direction: column;
+        flex-grow: 0;
+        justify-content: center;
+        align-items: flex-end;
+    } 
+
+    .header__nav {
+        flex-direction: column;
+    }
+    
+    .ultimas__novedades__grid {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 0px;
+        row-gap: 10px;
+    }   
+    .imagen-principal{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .tiempo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .deportes {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .politica {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .internacionales {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .titulo__recetas {
+        font-size: 10px;
+    }
+    
+    .recetas {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr)
+    }
+    
+    .recetas__italianas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .receta__carbonara {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Malfatti {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Espaguetis-al-pesto {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .receta__Panini-casero-de-atun {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        font-family: "roboto", sans-serif;
+        font-size: 8px;
+        color: black;
+        border: black solid 1px;
+        border-radius: 5px;
+        margin: 3px;
+        padding: 3px;
+    }
+    
+    .imagen__recetas {
+        width: 50px;
+    }
+
+    .form-control {
+        width: 300px;
+        margin: 5px;
+    }
+    
+    .apellido-nombre {
+        width: 300px;
+        height: 5px;
+    }
+    
+    .residencia {
+        width: 300px;
+        height: 5px;
+    }
+    
+    .texterea {
+        width: 300px;
+        height: 250px;
+    }
+    
+    .btn {
+        margin: 5px;
+    }
+    
+    footer {
+        grid-template-areas: "indice" 
+                            "mapa"
+                            "redes"
+                            "derechos";
+        padding: 10px;
+    }
+    
+    .medidas__mapa {
+        width: 200px;
+        height: 100px;
+    }
+
+    .footer__logoRS {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+    
+    .footer__derechos {
+        font-size: 5px;
+    }
+    
+    .footer__indice {
+    font-size: 10px;
+    }
+}
+
+/* media querie  de TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+    .ultimas__novedades__grid {
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+
+    .imagen-principal {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .tiempo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .deportes {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .politica {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+    .internacionales {
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+
+    .form__texto {
+        font-size: 10px;
+    }
+
+    footer {
+        grid-template-areas: "indice mapa" 
+                            "redes derechos";
+        padding: 15px;
+    }
+
+    .medidas__mapa {
+        width: 250px;
+        height: 150px;
+    }
+
+    .footer__logoRS {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+    
+    .footer__derechos {
+        font-size: 10px;
+    }
+}

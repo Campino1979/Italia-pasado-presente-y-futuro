@@ -1,0 +1,483 @@
+@import "footer";
+@import "nav";
+@import "mediaqueries";/* siempre se coloca ultima */
+
+* {
+    margin: 0px; /* Margen Externo */
+    padding: 0px; /* Margen Interno */
+}
+
+.header {
+    background-color:  #0066cc;
+}
+
+h1 {
+    font-family: 'Euphoria Script', cursive;    
+    color: rgb(50, 180, 60);
+    font-size: 46px;
+    text-decoration-line: underline; /* Para subrayar */
+    padding: 35px;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif; 
+    list-style: none; /* Para sacarle los puntos de la viñeta. */
+    padding: 0px 16px;
+}
+
+p {
+    padding: 10px 16px;
+}
+
+/* PAGINA INDEX */
+.main__texto-presentacion {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-image: url("../recursos/nubes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.main__texto-presentacion ::selection {
+    background-color: green;
+    color: white;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none; /* para que no haya un punto delante */
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: white;
+    text-decoration: none;
+    align-items: flex-end;
+}
+
+.header__item {
+    display: inline;
+    padding: 20px;
+}
+
+.header__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__logo {
+    width: 60px;
+    height: 58px;
+    display: inline;
+}
+
+.form__texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.form__texto ::first-letter {
+    color: red;
+    font-size: 28px;
+}
+
+.form__texto ::selection {
+    background-color: green;
+    color: white;
+}
+
+.ultimas__novedades__grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.imagen-principal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("../recursos/Coliseo\ por\ dentro-nAb-SFzL1GM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sociedad {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(52, 50, 50);
+}
+
+.sociedad ::selection {
+    background-color: green;
+    color: white;
+}
+
+.deportes {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(52, 50, 50);
+}
+
+.deportes ::selection {
+    background-color: green;
+    color: white;
+}
+
+.politica {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(52, 50, 50);
+}
+
+.politica ::selection {
+    background-color: green;
+    color: white;
+}
+
+.internacionales {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(52, 50, 50);
+}
+
+.internacionales ::selection {
+    background-color: green;
+    color: white;
+}
+
+.formato__titulo {
+    text-align: center;
+}
+
+.novedades__card {
+    width: 35px;
+}
+
+.card {
+    border: white solid 5px; /* color tipo y tamaño */
+}
+
+.card ::selection {
+    background-color: green;
+    color: white;
+}
+
+/* PAGINA RECETAS */
+.titulo__recetas {
+    text-align: center;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+.recetas {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white
+}
+
+.recetas__italianas {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.receta__carbonara {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: "roboto", sans-serif;
+    font-size: 10px;
+    color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.receta__carbonara:hover {
+    transform: scale(1.1,1.1);
+}
+
+.receta__Malfatti {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-family: "roboto", sans-serif;
+    font-size: 10px;
+    color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.receta__Malfatti:hover {
+    transform: scale(1.1,1.1);
+}
+
+.receta__Espaguetis-al-pesto {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: "roboto", sans-serif;
+    font-size: 10px;
+    color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.receta__Espaguetis-al-pesto:hover {
+    transform: scale(1.1,1.1);
+}
+
+.receta__Panini-casero-de-atun {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: "roboto", sans-serif;
+    font-size: 10px;
+    color: black;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.receta__Panini-casero-de-atun:hover {
+    transform: scale(1.1,1.1);
+}
+
+.imagen__recetas {
+    width: 80px;
+}
+
+/* PAGINA FOTOS Y VIDEOS */
+.imagen__italia__grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr; /* unidad de grid - cada columna ocupa un tercio del total*/
+    grid-template-rows: repeat(18, 1fr); /*  */
+    grid-template-areas:"siena coliseo manarola"
+                        "siena coliseo manarola"
+                        "siena florencia manarola"
+                        "siena florencia manarola"
+                        "volcan-etna venezia toscana"
+                        "volcan-etna venezia toscana"
+                        "motocicleta-italiana venezia volcan-stromboli"
+                        "motocicleta-italiana venezia volcan-stromboli"
+                        "motocicleta-italiana venezia volcan-stromboli"
+                        "motocicleta-italiana venezia volcan-stromboli"
+                        "auto-clasico-italiano lago-como fontana-di-trevi"
+                        "auto-clasico-italiano lago-como fontana-di-trevi"
+                        "auto-clasico-italiano lago-como fontana-di-trevi"
+                        "bandera calle duomo-di-milan"
+                        "bandera calle duomo-di-milan"
+                        "bandera calle duomo-di-milan"
+                        "bandera calle duomo-di-milan"
+                        "bandera calle duomo-di-milan";
+    column-gap: 10px;
+    row-gap: 10px;            
+}
+
+.siena {
+    grid-area: siena;
+    background-image: url("../recursos/Siena-_mEZtQzcpTA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coliseo {
+    grid-area: coliseo;
+    background-image: url("../recursos/Coliseo-75XHJzEIeUc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.florencia {
+    grid-area: florencia;
+    background-image: url("../recursos/Florencia-korner-pRU-VnBVJMQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.manarola {
+    grid-area: manarola;
+    background-image: url("../recursos/Manarola-rknrvCrfS1k-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.volcan-etna {
+    grid-area: volcan-etna;
+    background-image: url("../recursos/Volcan\ Etna-4Vnmyn0FsRU-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.motocicleta-italiana {
+    grid-area: motocicleta-italiana;
+    background-image: url("../recursos/Motocicleta\ Italiana-qugoGp8XK3c-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.venezia {
+    grid-area: venezia;
+    background-image: url("../recursos/Venezia-Uu5aXBI1oLk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.toscana {
+    grid-area: toscana;
+    background-image: url("../recursos/Toscana-tegethoff-l-GmdF7Md0o-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.volcan-stromboli {
+    grid-area: volcan-stromboli;
+    background-image: url("../recursos/Volcan\ Stromboli-o6rApA3y-dw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auto-clasico-italiano {
+    grid-area: auto-clasico-italiano;
+    background-image: url("../recursos/Auto-Q5BVSGt9Ljc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lago-como {
+    grid-area: lago-como;
+    background-image: url("../recursos/Lago\ Como-wwV3ZMLaAmg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fontana-di-trevi {
+    grid-area: fontana-di-trevi;
+    background-image: url("../recursos/Fontana\ di\ Trevi-I1Lv2yX67GI-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bandera {
+    grid-area: bandera;
+    background-image: url("../recursos/Bandera\ Italia-jf5SQVEKSFw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calle {
+    grid-area: calle;
+    background-image: url("../recursos/Calle\ vacia\ -qhPKYyHi2NM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.duomo-di-milan {
+    grid-area: duomo-di-milan;
+    background-image: url("../recursos/Duomo\ di\ Milano-stokes-xEQLO9EGu64-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* PAGINA CONTACTANOS */
+.form-control {
+    background-color: black;
+    color: white;
+    width: 500px;
+    margin: 10px;
+}
+
+.apellido-nombre {
+    width: 700px;
+    height: 10px;
+}
+
+.residencia {
+    width: 700px;
+    height: 10px;
+}
+
+.texterea {
+    width: 700px;
+    height: 500px;
+}
+
+.btn {
+    background-color: black;
+    color: white; 
+    margin: 10px;
+}
+
+.btn:focus {
+    outline: 4px solid red;
+}
+
+/* CSS en FOOTER */
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.mb-3 :focus { 
+    outline: 4px solid green;  
+}
+
+.form-label {
+    margin: 10px;
+}
+
