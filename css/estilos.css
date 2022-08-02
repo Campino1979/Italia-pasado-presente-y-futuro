@@ -10,24 +10,20 @@ footer__indice {
     .footer
 footer__indice ul li {
       font-size: 16px;
+      color: white;
       padding-bottom: 14px; }
   footer__mapa {
     grid-area: mapa;
     display: flex;
     justify-content: center; }
-  footer .medidas__mapa {
-    width: 400px;
-    height: 300px; }
+    footer__mapa.medidas__mapa {
+      width: 450px;
+      height: 300px; }
   footer__redes {
     grid-area: redes;
     display: flex;
     justify-content: center;
     align-items: flex-end; }
-  footer__logoRS {
-    display: inline;
-    width: 35px;
-    height: 35px;
-    margin: 15px; }
   footer__derechos {
     grid-area: derechos;
     font-family: 'Roboto', sans-serif;
@@ -35,7 +31,30 @@ footer__indice ul li {
     background-color: #0066cc;
     font-size: 14px;
     margin: 10px;
-    display: inline; }
+    display: flex; }
+  footer .footer__logoRS {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin: 15px; }
+  footer .instagram:hover {
+    transform: scale(1.5, 1.5); }
+  footer .facebook:hover {
+    transform: scale(1.5, 1.5); }
+  footer .whatsapp:hover {
+    transform: scale(1.5, 1.5); }
+  footer .youtube:hover {
+    transform: scale(1.5, 1.5); }
+  footer h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline; }
+  footer a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white; }
 
 /* las media querys siempre se miden en Pixels */
 /* media querie  de CELULAR */
@@ -590,19 +609,6 @@ p {
 
 .btn:focus {
   outline: 4px solid red; }
-
-/* CSS en FOOTER */
-a {
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  color: white; }
-
-h3 {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  color: white;
-  text-decoration: underline; }
 
 .mb-3 :focus {
   outline: 4px solid green; }

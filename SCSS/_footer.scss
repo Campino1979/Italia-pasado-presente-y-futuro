@@ -1,6 +1,6 @@
 footer {
     display: grid;
-    grid-template-areas: "indice mapa redes"
+    grid-template-areas:"indice mapa redes"
                         "indice mapa derechos";
     background-color:  #0066cc;
     padding: 24px;
@@ -8,37 +8,30 @@ footer {
     .footer
         &__indice {
         grid-area: indice;
-        & ul li {
+            & ul li {
             font-size: 16px;
+            color: white;
             padding-bottom: 14px;
+            }
         }
-    }
         
         &__mapa {
         grid-area: mapa;
         display: flex;
         justify-content: center;
-    }
-    
-    .medidas__mapa {
-        width:400px;
-        height: 300px; 
-    }
+            &.medidas__mapa {
+                width:450px;
+                height: 300px; 
+            }
+        }
     
         &__redes {
         grid-area: redes;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-    }    
-    
-        &__logoRS {
-        display: inline;
-        width: 35px;
-        height: 35px;
-        margin: 15px;
-        }
-    
+        }    
+        
         &__derechos {
         grid-area: derechos;
         font-family: 'Roboto', sans-serif;
@@ -46,7 +39,40 @@ footer {
         background-color: #0066cc;
         font-size: 14px;
         margin: 10px;
-        display: inline;
+        display: flex;
         }
+        
+        .footer__logoRS {
+            display: inline;
+            width: 35px;
+            height: 35px;
+            margin: 15px;
+        }
+        
+        .instagram:hover {
+            transform: scale(1.5,1.5);
+        }
+        .facebook:hover {
+            transform: scale(1.5,1.5);
+        }
+        .whatsapp:hover {
+            transform: scale(1.5,1.5);
+        }
+        .youtube:hover {
+            transform: scale(1.5,1.5);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: white;
+            text-decoration: underline;
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: white;
+        }    
     }
 
