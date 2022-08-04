@@ -38,30 +38,30 @@ footer {
         color: black;
         background-color: #0066cc;
         font-size: 14px;
-        margin: 10px;
+        margin: 20px;
         display: flex;
+        text-align: end;
         }
         
-        .footer__logoRS {
-            display: inline;
-            width: 35px;
-            height: 35px;
-            margin: 15px;
+        .bi {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .bi-instagram:hover {
+            transform: scale(1.5,1.5);
+        }
+        .bi-facebook:hover {
+            transform: scale(1.5,1.5);
+        }
+        .bi-whatsapp:hover {
+            transform: scale(1.5,1.5);
+        }
+        .bi-youtube:hover {
+            transform: scale(1.5,1.5);
         }
         
-        .instagram:hover {
-            transform: scale(1.5,1.5);
-        }
-        .facebook:hover {
-            transform: scale(1.5,1.5);
-        }
-        .whatsapp:hover {
-            transform: scale(1.5,1.5);
-        }
-        .youtube:hover {
-            transform: scale(1.5,1.5);
-        }
-
         h3 {
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
@@ -73,6 +73,10 @@ footer {
             font-family: 'Roboto', sans-serif;
             text-decoration: none;
             color: white;
+        }
+        h4 {
+            color: black;
+            text-align: center;
         }    
     }
 

@@ -30,20 +30,21 @@ footer__indice ul li {
     color: black;
     background-color: #0066cc;
     font-size: 14px;
+    margin: 20px;
+    display: flex;
+    text-align: end; }
+  footer .bi {
+    width: 50px;
+    height: 50px;
     margin: 10px;
-    display: flex; }
-  footer .footer__logoRS {
-    display: inline;
-    width: 35px;
-    height: 35px;
-    margin: 15px; }
-  footer .instagram:hover {
+    padding: 10px; }
+  footer .bi-instagram:hover {
     transform: scale(1.5, 1.5); }
-  footer .facebook:hover {
+  footer .bi-facebook:hover {
     transform: scale(1.5, 1.5); }
-  footer .whatsapp:hover {
+  footer .bi-whatsapp:hover {
     transform: scale(1.5, 1.5); }
-  footer .youtube:hover {
+  footer .bi-youtube:hover {
     transform: scale(1.5, 1.5); }
   footer h3 {
     font-size: 20px;
@@ -55,6 +56,9 @@ footer__indice ul li {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: white; }
+  footer h4 {
+    color: black;
+    text-align: center; }
 
 /* las media querys siempre se miden en Pixels */
 /* media querie  de CELULAR */
