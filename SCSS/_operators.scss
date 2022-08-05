@@ -1,0 +1,43 @@
+/* CONDICIONAL IF */
+
+@if (condicion a cumplir) {
+    /* CODIGO EN CASO DE QUE SE CUMPLA LA CONDICION */
+} @else {
+    /* EN CASO DE QUE NO SE CUMPLA */
+}
+
+/* MAP = COLECCION DE VARIABLES (CLAVE VALOR) */
+
+$redes: (
+    instagram: grey,
+    facebook: grey,
+    whatspss: grey,
+    youtube: grey
+);
+
+/* EACH - CADA UNO */
+@each $name, $color in $redes {
+    .color-#{$name} {
+        background-color: #{$color};
+        @if ($name = instagram) {
+            font-size: 18px;
+        }
+    }
+}
+
+/* EXTEND - Extender codigo */
+
+.background-centrado {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MIXIN - PERMITE CREAR CLASES BASE MODIFICABLES */
+
+@mixin flex($flex-durection, $justify, $align) {
+    flex-direction: $flex-durection;
+    justify-content: $justify;
+    align-items: $align;
+}
+

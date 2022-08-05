@@ -1,14 +1,19 @@
 @charset "UTF-8";
+/* COLORES */
+/* LETRAS */
+/* TAMAÑOS */
+/* TAMAÑO LETRA */
+/* REM - EM -> 1 REM -> 16px */
+/* REM ES UNA MEDIDA RESPONSIVE */
+/* siempre se coloca al principio */
 footer {
   display: grid;
   grid-template-areas: "indice mapa redes" "indice mapa derechos";
   background-color: #0066cc;
   padding: 24px; }
-  .footer
-footer__indice {
+  .footer footer__indice {
     grid-area: indice; }
-    .footer
-footer__indice ul li {
+    .footer footer__indice ul li {
       font-size: 16px;
       color: white;
       padding-bottom: 14px; }
@@ -26,7 +31,7 @@ footer__indice ul li {
     align-items: flex-end; }
   footer__derechos {
     grid-area: derechos;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: black;
     background-color: #0066cc;
     font-size: 14px;
@@ -48,18 +53,45 @@ footer__indice ul li {
     transform: scale(1.5, 1.5); }
   footer h3 {
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: white;
     text-decoration: underline; }
   footer a {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: white; }
   footer h4 {
     color: black;
     text-align: center; }
 
+/* CONDICIONAL IF */
+/* CODIGO EN CASO DE QUE SE CUMPLA LA CONDICION */
+/* MAP = COLECCION DE VARIABLES (CLAVE VALOR) */
+/* EACH - CADA UNO */
+.color-instagram {
+  background-color: grey;
+  font-size: 18px; }
+
+.color-facebook {
+  background-color: grey;
+  font-size: 18px; }
+
+.color-whatspss {
+  background-color: grey;
+  font-size: 18px; }
+
+.color-youtube {
+  background-color: grey;
+  font-size: 18px; }
+
+/* EXTEND - Extender codigo */
+.background-centrado, .main__texto-presentacion, .imagen-principal, .siena, .coliseo, .florencia, .manarola, .volcan-etna, .motocicleta-italiana, .venezia, .toscana, .volcan-stromboli, .auto-clasico-italiano, .lago-como, .fontana-di-trevi, .bandera, .calle, .duomo-di-milan {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* MIXIN - PERMITE CREAR CLASES BASE MODIFICABLES */
 /* las media querys siempre se miden en Pixels */
 /* media querie  de CELULAR */
 /* 99.99% de las veces debe haber solo una columna */
@@ -117,7 +149,7 @@ footer__indice ul li {
   .receta__carbonara {
     grid-column: 1/2;
     grid-row: 2/3;
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 8px;
     color: black;
     border: black solid 1px;
@@ -127,7 +159,7 @@ footer__indice ul li {
   .receta__Malfatti {
     grid-column: 1/2;
     grid-row: 3/4;
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 8px;
     color: black;
     border: black solid 1px;
@@ -137,7 +169,7 @@ footer__indice ul li {
   .receta__Espaguetis-al-pesto {
     grid-column: 1/2;
     grid-row: 4/5;
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 8px;
     color: black;
     border: black solid 1px;
@@ -147,7 +179,7 @@ footer__indice ul li {
   .receta__Panini-casero-de-atun {
     grid-column: 1/2;
     grid-row: 5/6;
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 8px;
     color: black;
     border: black solid 1px;
@@ -239,16 +271,16 @@ footer__indice ul li {
   background-color: #0066cc; }
 
 h1 {
-  font-family: 'Euphoria Script', cursive;
+  font-family: "Euphoria Script", cursive;
   color: #32b43c;
-  font-size: 46px;
+  font-size: 3.9rem;
   text-decoration-line: underline;
   /* Para subrayar */
   padding: 35px;
   text-align: center; }
 
 ul {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   list-style: none;
   /* Para sacarle los puntos de la viñeta. */
   padding: 0px 16px; }
@@ -258,14 +290,11 @@ p {
 
 /* PAGINA INDEX */
 .main__texto-presentacion {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 18px;
   text-align: center;
-  background-image: url("../recursos/nubes.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/nubes.jpg"); }
 
 .main__texto-presentacion ::selection {
   background-color: green;
@@ -296,7 +325,7 @@ p {
   display: inline; }
 
 .form__texto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px; }
 
 .form__texto ::first-letter {
@@ -319,16 +348,13 @@ p {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url("../recursos/Coliseo por dentro-nAb-SFzL1GM-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Coliseo por dentro-nAb-SFzL1GM-unsplash.jpg"); }
 
 .sociedad {
   grid-column: 2/3;
   grid-row: 1/2;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: white;
   background-color: #343232; }
 
@@ -339,8 +365,8 @@ p {
 .deportes {
   grid-column: 3/4;
   grid-row: 1/2;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: white;
   background-color: #343232; }
 
@@ -351,8 +377,8 @@ p {
 .politica {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: white;
   background-color: #343232; }
 
@@ -363,8 +389,8 @@ p {
 .internacionales {
   grid-column: 3/4;
   grid-row: 2/3;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: white;
   background-color: #343232; }
 
@@ -413,8 +439,8 @@ p {
 .receta__carbonara {
   grid-column: 2/3;
   grid-row: 1/2;
-  font-family: "roboto", sans-serif;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
@@ -427,8 +453,8 @@ p {
 .receta__Malfatti {
   grid-column: 3/4;
   grid-row: 1/2;
-  font-family: "roboto", sans-serif;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
@@ -441,8 +467,8 @@ p {
 .receta__Espaguetis-al-pesto {
   grid-column: 2/3;
   grid-row: 2/3;
-  font-family: "roboto", sans-serif;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
@@ -455,8 +481,8 @@ p {
 .receta__Panini-casero-de-atun {
   grid-column: 3/4;
   grid-row: 2/3;
-  font-family: "roboto", sans-serif;
-  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
@@ -484,108 +510,63 @@ p {
 
 .siena {
   grid-area: siena;
-  background-image: url("../recursos/Siena-_mEZtQzcpTA-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Siena-_mEZtQzcpTA-unsplash.jpg"); }
 
 .coliseo {
   grid-area: coliseo;
-  background-image: url("../recursos/Coliseo-75XHJzEIeUc-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Coliseo-75XHJzEIeUc-unsplash.jpg"); }
 
 .florencia {
   grid-area: florencia;
-  background-image: url("../recursos/Florencia-korner-pRU-VnBVJMQ-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Florencia-korner-pRU-VnBVJMQ-unsplash.jpg"); }
 
 .manarola {
   grid-area: manarola;
-  background-image: url("../recursos/Manarola-rknrvCrfS1k-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Manarola-rknrvCrfS1k-unsplash.jpg"); }
 
 .volcan-etna {
   grid-area: volcan-etna;
-  background-image: url("../recursos/Volcan Etna-4Vnmyn0FsRU-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Volcan Etna-4Vnmyn0FsRU-unsplash.jpg"); }
 
 .motocicleta-italiana {
   grid-area: motocicleta-italiana;
-  background-image: url("../recursos/Motocicleta Italiana-qugoGp8XK3c-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Motocicleta Italiana-qugoGp8XK3c-unsplash.jpg"); }
 
 .venezia {
   grid-area: venezia;
-  background-image: url("../recursos/Venezia-Uu5aXBI1oLk-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Venezia-Uu5aXBI1oLk-unsplash.jpg"); }
 
 .toscana {
   grid-area: toscana;
-  background-image: url("../recursos/Toscana-tegethoff-l-GmdF7Md0o-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Toscana-tegethoff-l-GmdF7Md0o-unsplash.jpg"); }
 
 .volcan-stromboli {
   grid-area: volcan-stromboli;
-  background-image: url("../recursos/Volcan Stromboli-o6rApA3y-dw-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Volcan Stromboli-o6rApA3y-dw-unsplash.jpg"); }
 
 .auto-clasico-italiano {
   grid-area: auto-clasico-italiano;
-  background-image: url("../recursos/Auto-Q5BVSGt9Ljc-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Auto-Q5BVSGt9Ljc-unsplash.jpg"); }
 
 .lago-como {
   grid-area: lago-como;
-  background-image: url("../recursos/Lago Como-wwV3ZMLaAmg-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Lago Como-wwV3ZMLaAmg-unsplash.jpg"); }
 
 .fontana-di-trevi {
   grid-area: fontana-di-trevi;
-  background-image: url("../recursos/Fontana di Trevi-I1Lv2yX67GI-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Fontana di Trevi-I1Lv2yX67GI-unsplash.jpg"); }
 
 .bandera {
   grid-area: bandera;
-  background-image: url("../recursos/Bandera Italia-jf5SQVEKSFw-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Bandera Italia-jf5SQVEKSFw-unsplash.jpg"); }
 
 .calle {
   grid-area: calle;
-  background-image: url("../recursos/Calle vacia -qhPKYyHi2NM-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Calle vacia -qhPKYyHi2NM-unsplash.jpg"); }
 
 .duomo-di-milan {
   grid-area: duomo-di-milan;
-  background-image: url("../recursos/Duomo di Milano-stokes-xEQLO9EGu64-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../recursos/Duomo di Milano-stokes-xEQLO9EGu64-unsplash.jpg"); }
 
 /* PAGINA CONTACTANOS */
 .form-control {

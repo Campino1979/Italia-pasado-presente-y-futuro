@@ -2,7 +2,7 @@ footer {
     display: grid;
     grid-template-areas:"indice mapa redes"
                         "indice mapa derechos";
-    background-color:  #0066cc;
+    background-color:  $color-principal;
     padding: 24px;
 
     .footer
@@ -34,9 +34,9 @@ footer {
         
         &__derechos {
         grid-area: derechos;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-principal;
         color: black;
-        background-color: #0066cc;
+        background-color: $color-principal;
         font-size: 14px;
         margin: 20px;
         display: flex;
@@ -44,10 +44,10 @@ footer {
         }
         
         .bi {
-            width: 55px;
-            height: 55px;
-            margin: 15px;
-            padding: 15px;
+        width: $medidas-iconos-redes;
+        height: $medidas-iconos-redes;
+        margin: 15px;
+        padding: 15px;
         }
         .bi-instagram:hover {
             transform: scale(1.5,1.5);
@@ -64,13 +64,13 @@ footer {
         
         h3 {
             font-size: 20px;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font-principal;
             text-decoration: none;
             color: white;
             text-decoration: underline;
         }
         a {
-            font-family: 'Roboto', sans-serif;
+            font-family: $font-principal;
             text-decoration: none;
             color: white;
         }
