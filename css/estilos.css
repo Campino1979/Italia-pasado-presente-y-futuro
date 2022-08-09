@@ -109,7 +109,7 @@ footer {
   .ultimas__novedades__grid {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     column-gap: 0px;
     row-gap: 10px; }
   .imagen-principal {
@@ -204,20 +204,61 @@ footer {
     margin: 5px; }
   footer {
     grid-template-areas: "indice"  "mapa" "redes" "derechos";
-    padding: 10px; }
-  .medidas__mapa {
-    width: 200px;
-    height: 100px; }
-  .footer__logoRS {
+    background-color: #0066cc;
+    padding: 5px; }
+  .footer __indice {
+    grid-area: indice; }
+    .footer __indice ul li {
+      font-size: 8px;
+      color: white;
+      padding-bottom: 7px; }
+  __mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center; }
+    __mapa.medidas__mapa {
+      width: 150px;
+      height: 50px; }
+  __redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  __derechos {
+    grid-area: derechos;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #0066cc;
+    font-size: 7px;
+    margin: 10px;
+    display: flex;
+    text-align: end; }
+  .bi {
     width: 15px;
     height: 15px;
-    margin: 5px; }
+    margin: 5px;
+    padding: 5px; }
+  .bi-instagram:hover {
+    transform: scale(1.2, 1.2); }
+  .bi-facebook:hover {
+    transform: scale(1.2, 1.2); }
+  .bi-whatsapp:hover {
+    transform: scale(1.2, 1.2); }
+  .bi-youtube:hover {
+    transform: scale(1.2, 1.2); }
   h3 {
-    font-size: 10px; }
-  .footer__derechos {
-    font-size: 5px; }
-  .footer__indice {
-    font-size: 10px; } }
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline; }
+  a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white; }
+  h4 {
+    color: black;
+    text-align: center; } }
 
 /* media querie  de TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -248,17 +289,59 @@ footer {
   footer {
     grid-template-areas: "indice mapa"  "redes derechos";
     padding: 15px; }
-  .medidas__mapa {
-    width: 250px;
-    height: 150px; }
-  .footer__logoRS {
-    width: 20px;
-    height: 20px;
-    margin: 10px; }
+  .footer __indice {
+    grid-area: indice; }
+    .footer __indice ul li {
+      font-size: 12px;
+      color: white;
+      padding-bottom: 10px; }
+  __mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center; }
+    __mapa.medidas__mapa {
+      width: 250px;
+      height: 150px; }
+  __redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  __derechos {
+    grid-area: derechos;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    background-color: #0066cc;
+    font-size: 10px;
+    margin: 15px;
+    display: flex;
+    text-align: end; }
+  .bi {
+    width: 25px;
+    height: 25px;
+    margin: 7px;
+    padding: 7px; }
+  .bi-instagram:hover {
+    transform: scale(1.4, 1.4); }
+  .bi-facebook:hover {
+    transform: scale(1.4, 1.4); }
+  .bi-whatsapp:hover {
+    transform: scale(1.4, 1.4); }
+  .bi-youtube:hover {
+    transform: scale(1.4, 1.4); }
   h3 {
-    font-size: 15px; }
-  .footer__derechos {
-    font-size: 10px; } }
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline; }
+  a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white; }
+  h4 {
+    color: black;
+    text-align: center; } }
 
 /* siempre se coloca ultima */
 * {
