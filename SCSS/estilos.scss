@@ -29,22 +29,38 @@ ul {
 }
 
 p {
-    padding: 10px 16px;
+    padding: 10px 14px;
 }
 
 /* PAGINA INDEX */
 .main__texto-presentacion {
     @extend .background-centrado;
     font-family: $font-principal;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 18px;
     text-align: center;
-    background-image: url("../recursos/nubes.jpg");
 }  
 
 .main__texto-presentacion ::selection {
     background-color: $color-seleccion;
     color: $color-letra-seleccion;
+}
+
+.main__imagen-presentacion {
+    display: grid;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    grid-template-areas:"simbolos-italia-sin-color simbolos-italia-sin-color simbolos-italia-sin-color";
+}
+
+.simbolos-italia-sin-color {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: simbolos-italia-sin-color;
+    background-image: url("../recursos/simbolos\ de\ italia\ sin\ color.jpg");
 }
 
 .nav-link {
@@ -74,41 +90,26 @@ p {
     display: inline;
 }
 
-.form__texto {
-    font-family: $font-principal;
-    font-size: 14px;
+.ultimas__novedades {
+    display: grid;
+    width: $total-ancho;
+    height: $total-alto;
 }
 
-.form__texto ::first-letter {
-    color: red;
-    font-size: 28px;
+.novedades__card {
+    width: 35px;
 }
 
-.form__texto ::selection {
+.card {
+    border: white solid 5px; /* color tipo y tamaño */
+}
+
+.card ::selection {
     background-color: $color-seleccion;
     color: $color-letra-seleccion;
 }
 
-.ultimas__novedades__grid {
-    display: grid;
-    width: $total-ancho;
-    height: $total-alto;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.imagen-principal {
-    @extend .background-centrado;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background-image: url("../recursos/Coliseo\ por\ dentro-nAb-SFzL1GM-unsplash.jpg");
-}
-
 .sociedad {
-    grid-column: 2/3;
-    grid-row: 1/2;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: white;
@@ -121,8 +122,6 @@ p {
 }
 
 .deportes {
-    grid-column: 3/4;
-    grid-row: 1/2;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: white;
@@ -135,8 +134,6 @@ p {
 }
 
 .politica {
-    grid-column: 2/3;
-    grid-row: 2/3;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: white;
@@ -149,8 +146,6 @@ p {
 }
 
 .internacionales {
-    grid-column: 3/4;
-    grid-row: 2/3;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: white;
@@ -166,17 +161,56 @@ p {
     text-align: center;
 }
 
-.novedades__card {
-    width: 35px;
+.texto__novedades {
+    font-size: 14px;
 }
 
-.card {
-    border: white solid 5px; /* color tipo y tamaño */
+/* PAGINA UN POCO DE HISTORIA */
+
+.form__texto {
+    font-family: $font-principal;
+    font-size: 14px;
 }
 
-.card ::selection {
+.form__texto ::selection {
     background-color: $color-seleccion;
     color: $color-letra-seleccion;
+}
+
+.introduccion {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.monarquia-romana {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.imperio-romano {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.el-renacimiento-italiano {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.la-italia-unificada {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.italia-en-la-actualidad {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* PAGINA RECETAS */
