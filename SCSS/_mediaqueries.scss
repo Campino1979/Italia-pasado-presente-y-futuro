@@ -18,132 +18,31 @@
         flex-direction: column;
     }
     
-    .ultimas__novedades__grid {
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        column-gap: 0px;
-        row-gap: 10px;
-    }   
-    .imagen-principal{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .tiempo {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .deportes {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .politica {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .internacionales {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .titulo__recetas {
-        font-size: 10px;
-    }
-    
     .recetas {
         display: grid;
         width: 100vw;
         height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr)
-    }
-    
-    .recetas__italianas {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    .receta__carbonara {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        font-family: $font-principal;
-        font-size: 8px;
-        color: black;
-        border: black solid 1px;
-        border-radius: 5px;
-        margin: 3px;
-        padding: 3px;
-    }
-    
-    .receta__Malfatti {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        font-family: $font-principal;
-        font-size: 8px;
-        color: black;
-        border: black solid 1px;
-        border-radius: 5px;
-        margin: 3px;
-        padding: 3px;
-    }
-    
-    .receta__Espaguetis-al-pesto {
-        grid-column: 1/2;
-        grid-row: 4/5;
-        font-family: $font-principal;
-        font-size: 8px;
-        color: black;
-        border: black solid 1px;
-        border-radius: 5px;
-        margin: 3px;
-        padding: 3px;
-    }
-    
-    .receta__Panini-casero-de-atun {
-        grid-column: 1/2;
-        grid-row: 5/6;
-        font-family: $font-principal;
-        font-size: 8px;
-        color: black;
-        border: black solid 1px;
-        border-radius: 5px;
-        margin: 3px;
-        padding: 3px;
-    }
-    
-    .imagen__recetas {
-        width: 50px;
-    }
-
-    .form-control {
-        width: 300px;
-        margin: 5px;
+        font-size: $contenido-texto;
+        margin: 40px;
     }
     
     .apellido-nombre {
-        width: 300px;
+        width: 150px;
         height: 5px;
     }
     
     .residencia {
-        width: 300px;
+        width: 150px;
         height: 5px;
     }
     
+    .email {
+        width: 150px;
+        height: 5px;
+    }
+
     .texterea {
-        width: 300px;
+        width: auto;
         height: 250px;
     }
     
@@ -151,6 +50,10 @@
         margin: 5px;
     }
     
+    .img-fluid {
+        display: none;
+    }
+
     footer {
         grid-template-areas:"indice" 
                             "mapa"
@@ -238,42 +141,13 @@
 
 /* media querie  de TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
-    .ultimas__novedades__grid {
-        height: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 15px;
-    }
-
-    .imagen-principal {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-    .tiempo {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    .deportes {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    
-    .politica {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-    
-    .internacionales {
-        grid-column: 3/4;
-        grid-row: 5/6;
-    }
-
+        
     .form__texto {
         font-size: 10px;
+    }
+
+    .img-fluid {
+        display: none;
     }
 
     footer {

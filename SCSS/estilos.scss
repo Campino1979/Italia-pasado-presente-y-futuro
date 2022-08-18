@@ -7,6 +7,7 @@
 * {
     margin: 0px; /* Margen Externo */
     padding: 0px; /* Margen Interno */
+    box-sizing: border;
 }
 
 .header {
@@ -220,35 +221,23 @@ p {
     text-decoration-line: underline;
 }
 
-.recetas {
-    display: grid;
-    width: $total-ancho;
-    height: $total-alto;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: white
+.texto__recetas {
+    font-size: 14px;
 }
 
-.recetas__italianas {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background-image: url("../recursos/Imagen\ de\ Recetas\ Italianas.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.recetas {
+    width: 90vw;
+    height: 30vh;
+    background-color: white;
 }
 
 .receta__carbonara {
-    grid-column: 2/3;
-    grid-row: 1/2;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: black;
     border: black solid 1px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 60px;
     padding: 5px;
 }
 
@@ -257,14 +246,12 @@ p {
 }
 
 .receta__Malfatti {
-    grid-column: 3/4;
-    grid-row: 1/2;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: black;
     border: black solid 1px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 60px;
     padding: 5px;
 }
 
@@ -273,14 +260,12 @@ p {
 }
 
 .receta__Espaguetis-al-pesto {
-    grid-column: 2/3;
-    grid-row: 2/3;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: black;
     border: black solid 1px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 60px;
     padding: 5px;
 }
 
@@ -289,14 +274,12 @@ p {
 }
 
 .receta__Panini-casero-de-atun {
-    grid-column: 3/4;
-    grid-row: 2/3;
     font-family: $font-principal;
     font-size: $contenido-texto;
     color: black;
     border: black solid 1px;
     border-radius: 15px;
-    margin: 5px;
+    margin: 60px;
     padding: 5px;
 }
 
@@ -431,18 +414,21 @@ p {
 .form-control {
     background-color: black;
     color: white;
-    width: 500px;
-    margin: 10px;
 }
 
 .apellido-nombre {
     width: 700px;
-    height: 10px;
+    height: 40px;
 }
 
 .residencia {
     width: 700px;
-    height: 10px;
+    height: 40px;
+}
+
+.email {
+    width: 700px;
+    height: 40px;
 }
 
 .texterea {
@@ -468,3 +454,9 @@ p {
     margin: 10px;
 }
 
+.img-fluid {
+    width: 1000px;
+    height: 1000px;
+    margin: 30px;
+    padding: 40px;
+}

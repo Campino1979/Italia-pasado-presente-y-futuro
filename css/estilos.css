@@ -37,7 +37,8 @@ footer {
     font-size: 14px;
     margin: 20px;
     display: flex;
-    text-align: end; }
+    justify-content: center;
+    text-align: left; }
   footer .bi {
     width: 55px;
     height: 55px;
@@ -106,102 +107,28 @@ footer {
     align-items: flex-end; }
   .header__nav {
     flex-direction: column; }
-  .ultimas__novedades__grid {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 0px;
-    row-gap: 10px; }
-  .imagen-principal {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .tiempo {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-  .deportes {
-    grid-column: 1/2;
-    grid-row: 3/4; }
-  .politica {
-    grid-column: 1/2;
-    grid-row: 4/5; }
-  .internacionales {
-    grid-column: 1/2;
-    grid-row: 5/6; }
-  .titulo__recetas {
-    font-size: 10px; }
   .recetas {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); }
-  .recetas__italianas {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-image: url("../recursos/Imagen de Recetas Italianas.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; }
-  .receta__carbonara {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-family: "Roboto", sans-serif;
-    font-size: 8px;
-    color: black;
-    border: black solid 1px;
-    border-radius: 5px;
-    margin: 3px;
-    padding: 3px; }
-  .receta__Malfatti {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    font-family: "Roboto", sans-serif;
-    font-size: 8px;
-    color: black;
-    border: black solid 1px;
-    border-radius: 5px;
-    margin: 3px;
-    padding: 3px; }
-  .receta__Espaguetis-al-pesto {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    font-family: "Roboto", sans-serif;
-    font-size: 8px;
-    color: black;
-    border: black solid 1px;
-    border-radius: 5px;
-    margin: 3px;
-    padding: 3px; }
-  .receta__Panini-casero-de-atun {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    font-family: "Roboto", sans-serif;
-    font-size: 8px;
-    color: black;
-    border: black solid 1px;
-    border-radius: 5px;
-    margin: 3px;
-    padding: 3px; }
-  .imagen__recetas {
-    width: 50px; }
-  .form-control {
-    width: 300px;
-    margin: 5px; }
+    font-size: 0.65rem;
+    margin: 40px; }
   .apellido-nombre {
-    width: 300px;
+    width: 150px;
     height: 5px; }
   .residencia {
-    width: 300px;
+    width: 150px;
+    height: 5px; }
+  .email {
+    width: 150px;
     height: 5px; }
   .texterea {
-    width: 300px;
+    width: auto;
     height: 250px; }
   .btn {
     margin: 5px; }
+  .img-fluid {
+    display: none; }
   footer {
     grid-template-areas: "indice"  "mapa" "redes" "derechos";
     background-color: #0066cc;
@@ -262,30 +189,10 @@ footer {
 
 /* media querie  de TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
-  .ultimas__novedades__grid {
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 15px; }
-  .imagen-principal {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .tiempo {
-    grid-column: 2/3;
-    grid-row: 2/3; }
-  .deportes {
-    grid-column: 3/4;
-    grid-row: 3/4; }
-  .politica {
-    grid-column: 2/3;
-    grid-row: 4/5; }
-  .internacionales {
-    grid-column: 3/4;
-    grid-row: 5/6; }
   .form__texto {
     font-size: 10px; }
+  .img-fluid {
+    display: none; }
   footer {
     grid-template-areas: "indice mapa"  "redes derechos";
     padding: 15px; }
@@ -348,7 +255,8 @@ footer {
   margin: 0px;
   /* Margen Externo */
   padding: 0px;
-  /* Margen Interno */ }
+  /* Margen Interno */
+  box-sizing: border; }
 
 .header {
   background-color: #0066cc; }
@@ -528,75 +436,57 @@ p {
   font-size: 16px;
   text-decoration-line: underline; }
 
+.texto__recetas {
+  font-size: 14px; }
+
 .recetas {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  width: 90vw;
+  height: 30vh;
   background-color: white; }
 
-.recetas__italianas {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background-image: url("../recursos/Imagen de Recetas Italianas.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
 .receta__carbonara {
-  grid-column: 2/3;
-  grid-row: 1/2;
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 60px;
   padding: 5px; }
 
 .receta__carbonara:hover {
   transform: scale(1.1, 1.1); }
 
 .receta__Malfatti {
-  grid-column: 3/4;
-  grid-row: 1/2;
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 60px;
   padding: 5px; }
 
 .receta__Malfatti:hover {
   transform: scale(1.1, 1.1); }
 
 .receta__Espaguetis-al-pesto {
-  grid-column: 2/3;
-  grid-row: 2/3;
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 60px;
   padding: 5px; }
 
 .receta__Espaguetis-al-pesto:hover {
   transform: scale(1.1, 1.1); }
 
 .receta__Panini-casero-de-atun {
-  grid-column: 3/4;
-  grid-row: 2/3;
   font-family: "Roboto", sans-serif;
   font-size: 0.65rem;
   color: black;
   border: black solid 1px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 60px;
   padding: 5px; }
 
 .receta__Panini-casero-de-atun:hover {
@@ -681,17 +571,19 @@ p {
 /* PAGINA CONTACTANOS */
 .form-control {
   background-color: black;
-  color: white;
-  width: 500px;
-  margin: 10px; }
+  color: white; }
 
 .apellido-nombre {
   width: 700px;
-  height: 10px; }
+  height: 40px; }
 
 .residencia {
   width: 700px;
-  height: 10px; }
+  height: 40px; }
+
+.email {
+  width: 700px;
+  height: 40px; }
 
 .texterea {
   width: 700px;
@@ -710,3 +602,9 @@ p {
 
 .form-label {
   margin: 10px; }
+
+.img-fluid {
+  width: 1000px;
+  height: 1000px;
+  margin: 30px;
+  padding: 40px; }
