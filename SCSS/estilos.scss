@@ -19,7 +19,6 @@ h1 {
     color: rgb(50, 180, 60);
     font-size: $titulos;
     text-decoration-line: underline; /* Para subrayar */
-    padding: 35px;
     text-align: center;
 }
 
@@ -167,6 +166,10 @@ p {
 }
 
 /* PAGINA UN POCO DE HISTORIA */
+
+h5 {
+    margin-left: 20px; 
+}
 
 .form__texto {
     font-family: $font-principal;
@@ -416,28 +419,9 @@ p {
     color: white;
 }
 
-.apellido-nombre {
-    width: 700px;
-    height: 40px;
-}
-
-.residencia {
-    width: 700px;
-    height: 40px;
-}
-
-.email {
-    width: 700px;
-    height: 40px;
-}
-
-.texterea {
-    width: 700px;
-    height: 500px;
-}
-
 .btn {
     background-color: black;
+    size-adjust: 100px;
     color: white; 
     margin: 10px;
 }
@@ -455,8 +439,8 @@ p {
 }
 
 .img-fluid {
-    width: 1000px;
-    height: 1000px;
-    margin: 30px;
-    padding: 40px;
+    width: 600px;
+    height: 540px;
+    margin: 55px;
+    padding: 30px;
 }

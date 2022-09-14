@@ -67,8 +67,6 @@ footer {
     text-align: center; }
 
 /* CONDICIONAL IF */
-/* CODIGO EN CASO DE QUE SE CUMPLA LA CONDICION */
-/* MAP = COLECCION DE VARIABLES (CLAVE VALOR) */
 /* EACH - CADA UNO */
 .color-instagram {
   background-color: grey;
@@ -113,18 +111,6 @@ footer {
     height: 100vh;
     font-size: 0.65rem;
     margin: 40px; }
-  .apellido-nombre {
-    width: 150px;
-    height: 5px; }
-  .residencia {
-    width: 150px;
-    height: 5px; }
-  .email {
-    width: 150px;
-    height: 5px; }
-  .texterea {
-    width: auto;
-    height: 250px; }
   .btn {
     margin: 5px; }
   .img-fluid {
@@ -267,7 +253,6 @@ h1 {
   font-size: 3.9rem;
   text-decoration-line: underline;
   /* Para subrayar */
-  padding: 35px;
   text-align: center; }
 
 ul {
@@ -392,6 +377,9 @@ p {
   font-size: 14px; }
 
 /* PAGINA UN POCO DE HISTORIA */
+h5 {
+  margin-left: 20px; }
+
 .form__texto {
   font-family: "Roboto", sans-serif;
   font-size: 14px; }
@@ -573,24 +561,9 @@ p {
   background-color: black;
   color: white; }
 
-.apellido-nombre {
-  width: 700px;
-  height: 40px; }
-
-.residencia {
-  width: 700px;
-  height: 40px; }
-
-.email {
-  width: 700px;
-  height: 40px; }
-
-.texterea {
-  width: 700px;
-  height: 500px; }
-
 .btn {
   background-color: black;
+  size-adjust: 100px;
   color: white;
   margin: 10px; }
 
@@ -604,7 +577,7 @@ p {
   margin: 10px; }
 
 .img-fluid {
-  width: 1000px;
-  height: 1000px;
-  margin: 30px;
-  padding: 40px; }
+  width: 600px;
+  height: 540px;
+  margin: 55px;
+  padding: 30px; }
